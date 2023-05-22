@@ -23,15 +23,6 @@ function search(str) {
 	return results
 }
 
-function searchHandler(e) {
-	// TODO
-}
-
-function showSuggestions(results, inputVal) {
-
-	// TODO
-}
-
 function useSuggestion(e) {
 	// TODO
 	input.value = e;
@@ -48,17 +39,11 @@ function renderDropdown(filteredFruits) {
   
 	suggestions.style.display = 'block';
   
-	const dropdownList = document.createElement('ul');
-  
 	filteredFruits.forEach(function(fruit) {
 	  const listItem = document.createElement('li');
 	  listItem.textContent = fruit;
-	  dropdownList.appendChild(listItem);
+	  suggestions.appendChild(listItem);
 	  listItem.addEventListener('click', function(){useSuggestion(fruit)
 	  suggestions.style.display = "none";});
 	});
-  
-	suggestions.appendChild(dropdownList);
   }
-
-  input.addEventListener('keyup', searchHandler);
