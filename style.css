@@ -19,9 +19,8 @@ input {
  text-align: center;
  font-size: 30px;
  border: solid black 2px;
- border-radius: 5px;
 background-color: rgb(89, 131, 154);
-color:whitesmoke;
+color:white;
 padding: 10px;
 margin-top: 80px;
 }
@@ -46,7 +45,6 @@ margin-top: 80px;
 
 ul {
   /* TODO */
-  border: solid black 2px;
   margin-top: 0px;
   padding-left: 0px;
 
@@ -59,7 +57,7 @@ li {
   /* TODO */
   background-color: rgb(89,131,154);
   color: white;
-  border: solid black 2px;
+  border: solid black 1px;
   text-align: center;
   list-style-type: none;
   font-size: 20px;
